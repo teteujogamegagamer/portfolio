@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu portfólio</title>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/mateus.jpg" alt="avatar do Mateus" class="rounded-circle" width="150" height="150" srcset="">
+        <p class="lead">Eu sou Mateus</p>
+        <h1>Eu estudo Espanhol</h1>
+        <p>
+            Sou um estudante do 2° ano do Ensino Médio. Tenho interesse em tecnologia e aprendo espanhol de forma
+            autodidata. Tenho pouco conhecimento em programação, e a seguir compartilho alguns projetos em que realizei na
+            escola.
+        </p>
+        <p>Minhas habilidades:</p>
+        <div>
+            <p class="badge bg-secondary">HTML</p>
+            <p class="badge bg-secondary">CSS</p>
+            <p class="badge bg-secondary">JavaScript</p>
+            <p class="badge bg-secondary">Scratch</p>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/monalisa.png" class="card-img-top" alt="Imagem da monalisa">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Monalisa
+                        </h5>
+                        <p class="card-text">
+                            Um rosto estilizado com mini chifres e a pele verde clara, o projeto foi desenhado em p5.js,
+                            cujo a pupíla se mexe de acordo com o ponteiro do mouse.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/corrida.png" class="card-img-top" alt="img da corrida">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Corrida dos Anjos vs Demônios
+                        </h5>
+                        <p class="card-text">
+                            Um jogo de corrida feito com p5.js onde 2 anjos e 3 demônios, controlados pelas teclas: ( A,
+                            S, J, K, L ), competem para ver quem chega primeiro à linha de chegada.
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/quente e frio.png" class="card-img-top" alt="Img do quente e frio">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Quente e frio
+                        </h5>
+                        <p class="card-text">
+                            Um jogo simples desenvolvido com p5.js, em que o jogador deve localizar um ponto escondido
+                            movendo o mouse. Ao se aproximar o bastante, o jogo sinaliza que o ponto foi encontrado.
+
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Veja
+                            o projeto</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto da Monalisa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Este projeto consiste em uma ilustração interativa desenvolvida com a biblioteca p5.js. Ele
+                        representa um rosto estilizado com chifres, pele verde e expressão chateada. O destaque
+                        principal é o movimento das pupilas, que acompanham a posição do cursor do mouse na tela. Além
+                        disso, ao clicar com o mouse, as coordenadas são exibidas no console, o que pode auxiliar no
+                        ajuste de detalhes visuais. O projeto utiliza formas geométricas simples (como círculos e
+                        triângulos) para compor um personagem expressivo e oferece uma introdução divertida à interação
+                        entre o usuário e o desenho gráfico.
+
+                    </p>
+
+                    <img src="img/monalisa.png" class="img-fluid w-100" alt="Imagem da monalisa">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/00001125270548sp/full/kxi17UfHd">Ver projeto ao
+                        vivo</a>
+                    <a href="https://github.com/teteujogamegagamer/Monalisa-do-uatizapi">Ver código do
+                        projeto</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto da Corrida de Anjos vs Demônios</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Este projeto é um jogo de corrida desenvolvido com a biblioteca p5.js, no qual cinco personagens
+                        representados por emojis de anjos e demônios disputam para ver quem alcança primeiro a linha de
+                        chegada. Cada jogador controla um dos seres espirituais utilizando as teclas A, S, J, K e L do
+                        teclado. Ao pressionar a tecla correspondente, o personagem avança uma distância aleatória. A
+                        corrida segue até que um dos competidores cruze a linha de chegada, momento em que o nome do
+                        vencedor é exibido na tela e o jogo é pausado automaticamente com noLoop(). O fundo muda de cor
+                        conforme o foco da janela do jogo, criando um efeito visual interessante. É um projeto simples e
+                        divertido, ideal para treinar lógica de programação, interação com o teclado e uso de funções
+                        gráficas básicas.
+                    </p>
+                    <img src="img/corrida.png" class="img-fluid w-100" alt="Imagem da corrida">
+                    <div class="modal-footer">
+                        <a href="https://editor.p5js.org/00001125270548sp/full/vmb35I2y1">Ver projeto ao
+                            vivo</a>
+                        <a href="https://github.com/teteujogamegagamer/corrida-anjos-vs-demonios">Ver código do
+                            projeto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Projeto do Quente e frio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Este projeto é um mini jogo interativo desenvolvido com p5.js. Um ponto é colocado
+                        aleatoriamente na tela, mas permanece invisível para o jogador. Em vez de vê-lo diretamente, o
+                        jogador move o mouse e observa um círculo preto, cujo tamanho varia conforme a distância até o
+                        ponto escondido: quanto mais perto estiver, menor será o círculo. Essa dinâmica cria uma espécie
+                        de "busca quente e fria". Quando o mouse chega a menos de 3 pixels do ponto oculto, a mensagem
+                        "Encontrou, seu bobão!" é exibida na tela, e a animação é interrompida com noLoop(). É um ótimo exemplo de
+                        como aplicar lógica, cálculo de distância e interatividade de forma criativa.
+                    </p>
+                    <img src="img/encontrou quente e frio.png" alt="Projeto 3" class="img-fluid w-100">
+                </div>
+                <div class="modal-footer">
+                    <a href="https://editor.p5js.org/00001125270548sp/full/aWl6gl2KD">Ver projeto ao
+                        vivo</a>
+                    <a href="https://github.com/teteujogamegagamer/jogo-da-lanterninha">Ver código do
+                        projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5">
+        <h2>Entre em contato</h2>
+        <div>
+            <i class="bi bi-github"></i>
+            <a href="https://github.com/teteujogamegagamer">GitHub</a>
+
+        </div>
+        <p class="my-5 text-center">© Copyright 2025. Produzido por Mateus</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
